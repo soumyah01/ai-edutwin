@@ -1,41 +1,69 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# === Node.js / Next.js ===
+node_modules/
+.next/
+out/
+build/
+.vercel
+.env*
+*.tsbuildinfo
+next-env.d.ts
+package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.DS_Store
 
-# env files (can opt-in for committing if needed)
-.env*
+# === Python / FastAPI ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+downloads/
+wheels/
+*.egg
+MANIFEST
+*.log
+*.pot
+*.mo
+*.spec
+htmlcov/
+.tox/
+.coverage
+.cache/
+*.cover
+.pytest_cache/
+.hypothesis/
+.pytype/
+.pyre/
+.mypy_cache/
+dmypy.json
+.Python
+.pdm-python
+.pdm-build/
+.pixi
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.pypirc
 
-# vercel
-.vercel
+# === Jupyter/IDE/Editor ===
+.ipynb_checkpoints
+.ropeproject
+.spyderproject
+.spyproject
+.idea/
+.vscode/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# === Other Tools ===
+.ruff_cache/
+.cursorignore
+.cursorindexingignore
+.marimo/
